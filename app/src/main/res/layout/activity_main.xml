@@ -1,0 +1,98 @@
+<RelativeLayout
+    android:id="@+id/relative_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/button_juego"
+        android:layout_width="287dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:drawableLeft="@mipmap/ic_ps_control_foreground"
+        android:text="Juego"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/textView1_juego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_juego"
+        android:layout_alignStart="@id/button_juego"
+        android:text="Usado por última vez " />
+
+    <TextView
+        android:id="@+id/textView_fecha_usado_juego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_juego"
+        android:layout_toRightOf="@id/textView1_juego"
+        android:text="FECHA" />
+
+    <TextView
+        android:id="@+id/textView2_juego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_fecha_usado_juego"
+        android:layout_alignStart="@id/button_juego"
+        android:text="El botón ha sido pulsado " />
+
+    <TextView
+        android:id="@+id/textView_num_veces_juego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_fecha_usado_juego"
+        android:layout_toRightOf="@id/textView2_juego"
+        android:text="0 veces" />
+
+    <Button
+        android:id="@+id/button_paises"
+        android:layout_width="287dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/textView2_juego"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00b341"
+        android:drawableLeft="@mipmap/ic_world_earth_foreground"
+        android:layout_marginTop="30dp"
+        android:text="Paises" />
+
+    <TextView
+        android:id="@+id/textView1_paises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_paises"
+        android:layout_alignStart="@id/button_paises"
+        android:text="Usado por última vez " />
+
+    <TextView
+        android:id="@+id/textView_fecha_usado_paises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView1_paises"
+        android:text="FECHA"
+        android:layout_below="@id/button_paises" />
+
+    <TextView
+        android:id="@+id/textView2_paises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El botón ha sido pulsado "
+        android:layout_alignStart="@id/button_paises"
+        android:layout_below="@id/textView_fecha_usado_paises"/>
+
+    <TextView
+        android:id="@+id/textView_num_veces_paises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 veces"
+        android:layout_below="@id/textView_fecha_usado_paises"
+        android:layout_toRightOf="@id/textView2_paises"/>
+
+
+
+
+</RelativeLayout>
